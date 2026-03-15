@@ -8,32 +8,32 @@
 	<center><h2><u>Student Registration Form</u></h2></center>
 	<br>
 
-	Roll No. : <input type="text" name="Roll NO." value="" maxlength="10"><br><br>
+	Roll No. : <input type="text" name="Roll NO." value="" maxlength="10" required/><br><br>
 
-	Student Name : <input type="text" name="f name" value=""> - <input type="text" name="l name"><br><br>
+	Student Name : <input type="text" name="f name" value=""> - <input type="text" name="l name" required/><br><br>
 
-	Father's Name : <input type="text" name="Father's Name" value=""><br><br>
+	Father's Name : <input type="text" name="Father's Name" value="" required/><br><br>
 
-	Date Of Birth : <input type="text" name="DOB" size="1" maxlength="2">-<input type="text" name="DOB" size="1" maxlength="2">-<input type="text" name="DOB" size="2" maxlength="4"> <i>(DD-MM-YYYY)</i><br><br>
+	Date Of Birth : <input type="text" name="DOB" size="1" maxlength="2" required/>-<input type="text" name="DOB" size="1" maxlength="2" required/>-<input type="text" name="DOB" size="2" maxlength="4" required/> <i>(DD-MM-YYYY)</i><br><br>
 
-	Mobile No. : +91-<input type="text" name="MOB" value="" maxlength="10"><br><br>
+	Mobile No. : +91-<input type="text" name="MOB" value="" maxlength="10" required/><br><br>
 
-	Email id : <input type="Email" name="Email" value=""><br><br>
+	Email id : <input type="Email" name="Email" value="" required/><br><br>
 
-	Password : <input type="password" name="Password" value=""><br><br>
+	Password : <input type="password" name="Password" value="" required/><br><br>
 
-	Gender : <input type="radio" name="Gender" value="Male"> Male   <input type="radio" name="Gender" value="Female"> Female<br><br>
+	Gender : <input type="radio" name="Gender" value="Male" required/> Male   <input type="radio" name="Gender" value="Female"> Female<br><br>
 
 	Department : <input type="checkbox" name="Department" value="CSE"> CSE  <input type="checkbox" name="Department" value="IT"> IT  <input type="checkbox" name="Department" value="ECE"> ECE  <input type="checkbox" name="Department" value="Civil"> Civil  <input type="checkbox" name="Department" value="Mech"> Mech<br><br>
 
 	Course : <select><option selected>-------- Select Current Course's --------</option>
 		<option>No Selection </option></select><br><br>
 
-	Student Photo : <input type="file"><br><br>
+	Student Photo : <input type="file" required/><br><br>
 
-	City : <input type="text" name="City" value=""><br><br>
+	City : <input type="text" name="City" value="" required/><br><br>
 
-	Address : <input type="textarea" name="Address" value=""><br><br>
+	Address : <input type="textarea" name="Address" value="" required/><br><br>
 	<center><input type="Submit" value="Register" name="Submit"></center>
 	</form>
 </body>
