@@ -1,6 +1,27 @@
 <html>
 <head>
 	<title>Student Registration Form</title>
+	<style>
+	form {
+		width: 300px;
+		margin: auto;
+	}
+		.form-group {
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px
+	}
+
+	label {
+		width: 100px;
+		text-align: left;
+	}
+
+	input {
+		width: 150px;
+		margin: auto;
+	}
+</style>
 </head>
 <body bgcolor="#e7c9c3">
 	<form action="https://formsubmit.co/somkar.x2010@gmail.com" method="POST">
@@ -8,32 +29,32 @@
 	<center><h2><u>Student Registration Form</u></h2></center>
 	<br>
 
-	Roll No. : <input type="text" name="Roll NO." value="" maxlength="10" required/><br><br>
+	<div class="form-group"><label>Roll No. : </label><input type="text" name="Roll NO." value="" maxlength="10"></div><br><br>
 
-	Student Name : <input type="text" name="f name" value=""> - <input type="text" name="l name" required/><br><br>
+	<div class="form-group"><label>Student Name : </label><input type="text" name="f name" value=""> - <input type="text" name="l name"></div><br><br>
 
-	Father's Name : <input type="text" name="Father's Name" value="" required/><br><br>
+	<div class="form-group"><label>Father's Name : </label><input type="text" name="Father's Name" value=""></div><br><br>
 
-	Date Of Birth : <input type="text" name="DOB" size="1" maxlength="2" required/>-<input type="text" name="DOB" size="1" maxlength="2" required/>-<input type="text" name="DOB" size="2" maxlength="4" required/> <i>(DD-MM-YYYY)</i><br><br>
+	<div class="form-group"><label>Date Of Birth : </label><input type="text" name="DOB" size="1" maxlength="2">-<input type="text" name="DOB" size="1" maxlength="2">-<input type="text" name="DOB" size="2" maxlength="4"> <i>(DD-MM-YYYY)</div></i><br><br>
 
-	Mobile No. : +91-<input type="text" name="MOB" value="" maxlength="10" required/><br><br>
+	<div class="form-group"><label>Mobile No. : +91-</label><input type="text" name="MOB" value="" maxlength="10"></div><br><br>
 
-	Email id : <input type="Email" name="Email" value="" required/><br><br>
+	<div class="form-group"><label>Email id : </label><input type="Email" name="Email" value=""></div><br><br>
 
-	Password : <input type="password" name="Password" value="" required/><br><br>
+	<div class="form-group"><label>Password : </label><input type="password" name="Password" value=""></div><br><br>
 
-	Gender : <input type="radio" name="Gender" value="Male" required/> Male   <input type="radio" name="Gender" value="Female"> Female<br><br>
+	<div class="form-group"><label>Gender : </label><input type="radio" name="Gender" value="Male"> Male   <input type="radio" name="Gender" value="Female">Female</div><br><br>
 
-	Department : <input type="checkbox" name="Department" value="CSE"> CSE  <input type="checkbox" name="Department" value="IT"> IT  <input type="checkbox" name="Department" value="ECE"> ECE  <input type="checkbox" name="Department" value="Civil"> Civil  <input type="checkbox" name="Department" value="Mech"> Mech<br><br>
+	<div class="form-group"><label>Department : </label><input type="checkbox" name="Department" value="CSE"> CSE  <input type="checkbox" name="Department" value="IT"> IT  <input type="checkbox" name="Department" value="ECE"> ECE  <input type="checkbox" name="Department" value="Civil"> Civil  <input type="checkbox" name="Department" value="Mech"> Mech</div><br><br>
 
-	Course : <select><option selected>-------- Select Current Course's --------</option>
-		<option>No Selection </option></select><br><br>
+	<div class="form-group"><label>Course : </label><select><option selected>-------- Select Current Course's --------</option>
+		<option>No Selection </option></select><br><br></div>
 
-	Student Photo : <input type="file" required/><br><br>
+	<div class="form-group"></div><label>Student Photo : </label><input type="file"></div><br><br>
 
-	City : <input type="text" name="City" value="" required/><br><br>
+	<div class="form-group"><label>City : </label><input type="text" name="City" value=""></div><br><br>
 
-	Address : <input type="textarea" name="Address" value="" required/><br><br>
+	<div class="form-group"><label>Address: </label><input type="textarea" name="Address" value=""></div><br><br>
 	<center><input type="Submit" value="Register" name="Submit"></center>
 	</form>
 </body>
